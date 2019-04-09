@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chen Xu Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Chen Xu Blog">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chen Xu Blog">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Chen Xu Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chen Xu Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Yeah</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/09/mrc_data/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen Xu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Xu Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/09/mrc_data/" class="post-title-link" itemprop="url">机器阅读理解数据集</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-09 11:02:31 / 修改时间：11:12:56" itemprop="dateCreated datePublished" datetime="2019-04-09T11:02:31+08:00">2019-04-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。</p>
+<h2 id="机器阅读理解中的数据集"><a href="#机器阅读理解中的数据集" class="headerlink" title="机器阅读理解中的数据集"></a>机器阅读理解中的数据集</h2><p>机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是：</p>
+<p>$$f(P,Q)=A$$</p>
+<p>这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领域的研究进展。根据问题（Q）和回答（A）的形式，机器阅读理解中的数据集可以分为最早的完型填空形式（cloze-style）、多项选择（multi-choice）、区域预测（span-prediction）和自由形式（open-form）。经历过英语高考的各位对此都不陌生，下面对这四种形式分别介绍，并给出每种形式的代表数据集。</p>
+<h3 id="1、完型填空形式"><a href="#1、完型填空形式" class="headerlink" title="1、完型填空形式"></a>1、完型填空形式</h3><p>完型填空类型的阅读理解问题就是在原文中挖出一个空来，由机器根据对文章上下文的理解去补全。这类比较著名的数据集有CNN/Daily Mail、Children’s Book Test(CBT)等，下文介绍了CNN/Daily Mail.</p>
+<ul>
+<li><strong>CNN/Daily Mail</strong> :<br>CNN/Daily Mail s数据集由大名鼎鼎的机器阅读理解文章《Teaching  Machines to Read and Comprehend》给出。值得一提的是，该篇文章还提出了两个经典的神经机器阅读理解模型，以后再做介绍。数据集从CNN和Daily Mail的新闻中提取文章，并抽取新闻报道中重点句子的entity，将其替换为空格。为了去除额外信息，如世界知识的影响，文章中的实体被匿名的ID所代替，并打乱序号顺序，这使得模型必须依赖文本来回答问题。下图是论文给出的一个示例。<br><img src="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="论文中给出的示例"><br>CNN/Daily Mail数据集下载：<a href="https://cs.nyu.edu/~kcho/DMQA/" target="_blank" rel="noopener">https://cs.nyu.edu/~kcho/DMQA/</a><br>论文地址：<a href="https://arxiv.org/abs/1506.03340" target="_blank" rel="noopener">Teaching  Machines to Read and Comprehend</a></li>
+</ul>
+<h3 id="2、-多项选择形式"><a href="#2、-多项选择形式" class="headerlink" title="2、 多项选择形式"></a>2、 多项选择形式</h3><p>此类形式和初高中时英语阅读理解题的类型相似，甚至有数据集以中国中学生英语考试的数据为基础构建数据集（RACE）。每篇文章对应多个问题，每个问题有多个候选答案，机器需要在这些候选答案中找到最合适的那个。通常这些候选答案与原文中的句子并不相同，即使相同也可能和问题毫不相关，所以仅靠判断相似性无法取得较好的效果。此类数据集中比较著名的有MCTest、RACE等，下面介绍RACE数据集。</p>
+<ul>
+<li><strong>RACE</strong>：2017年提出，从中国初中生和高中生的英语考试中搜集了2万多篇文章和10万个问题，覆盖领域广泛，这些问题由专家或老师提出，原本是考察人类的阅读理解水平，所以回答问题需要机器有一定的推理能力。<br><img src="https://img-blog.csdnimg.cn/20190407115355693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>RACE数据集下载：<a href="http://www.cs.cmu.edu/~glai1/data/race/" target="_blank" rel="noopener">http://www.cs.cmu.edu/~glai1/data/race/</a><br>论文地址：<a href="https://arxiv.org/abs/1704.04683" target="_blank" rel="noopener">RACE: Large-scale ReAding Comprehension Dataset From Examinations</a></li>
+</ul>
+<h3 id="3、-区域预测形式"><a href="#3、-区域预测形式" class="headerlink" title="3、 区域预测形式"></a>3、 区域预测形式</h3><p>区域预测形式阅读理解问题也称为抽取式问答（Extractive QA），即给定文章和问题，机器需要在文章中找到答案对应的区域（span），给出开始位置和结束位置，区域的长度通常不会限制。这类数据集中最常用的是斯坦福大学的SQuAD数据集。</p>
+<ul>
+<li><p><strong>SQuAD</strong>:2016年，斯坦福大学提出了阅读理解数据集SQuAD，包含了在536篇维基百科手工（crowdworkers）找出的10万多个问题。每个问题对应一篇文章，问题的答案是对应文章中的一部分。<br><img src="https://img-blog.csdnimg.cn/2019040712173083.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>SQuAD数据集下载：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>论文地址：<a href="https://arxiv.org/abs/1606.05250" target="_blank" rel="noopener">SQuAD: 100,000+ Questions for Machine Comprehension of Text</a></p>
+</li>
+<li><p><strong>SQuAD2.0</strong>：SQuAD2.0是SQuAD1.0版本的扩展版，同样是由斯坦福大学发布。与前一个版本不同的是，在之前同样的文章中增加了5万多个新的，无法回答的问题。这些问题在相应文章中有似是而非（plausible）的答案，即和提的问题是同种类型的，但并不正确。模型需要识别这些问题从而避免回答。<br><img src="https://img-blog.csdnimg.cn/2019040712313454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>SQuAD2.0 数据集地址：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>论文地址：<a href="https://arxiv.org/abs/1806.03822" target="_blank" rel="noopener">Know What You Don’t Know: Unanswerable Questions for SQuAD</a></p>
+</li>
+</ul>
+<h3 id="4、-自由形式"><a href="#4、-自由形式" class="headerlink" title="4、 自由形式"></a>4、 自由形式</h3><p>自由形式的问答是所有问答形式中最难的一个，它不限定问题所处的段落，即一个问题可能是需要理解多个段落甚至多篇文章，问题的答案是人为创造的，也就是既不会给定候选答案，也不是只需要提取文章中的片段。这对机器的阅读理解能力有更高的要求。此类型的数据集比较有名的是百度的DuReader和微软的MS MARCO，两者分别从百度搜索和必应搜索中收集数据。在直觉上看，在搜索引擎中获取数据集是个很巧妙的方法，这省掉了很多人为标注的时间。下面来看DuReader。</p>
+<ul>
+<li><strong>DuReader</strong>：2017年百度发布了开领域的中文阅读理解数据集DuReader，在百度知道和百度搜索中收集了一百多万个文档和二十多万个不同类型的问题，包括YesNo问题，描述性问题等，并且手工制造答案。<br><img src="https://img-blog.csdnimg.cn/20190407123010357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>DuReader数据集下载：<a href="https://ai.baidu.com//broad/subordinate?dataset=dureader" target="_blank" rel="noopener">https://ai.baidu.com//broad/subordinate?dataset=dureader</a><br>论文下载:<a href="https://arxiv.org/abs/1711.05073" target="_blank" rel="noopener">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>上述是对当下机器阅读理解数据集的简述，至于每个数据集中各模型的排名情况，可以移步<a href="https://paperswithcode.com/" target="_blank" rel="noopener">paperwithcode</a>查看。根据任务定义的不同，各数据集的评价指标也不尽相同。完形填空和多项选择可以直接用准确率衡量，区域预测形式可以用F1衡量。自由形式的阅读理解评价指标有多种，用到BLEU和ROUGE-L的多一些。本文提到的数据集如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据集名称</th>
+<th style="text-align:center">数据来源</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">文档数目</th>
+<th style="text-align:center">问题数目</th>
+<th style="text-align:center">评价指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CNN/Daily Mail</td>
+<td style="text-align:center">CNN,Daily Mail</td>
+<td style="text-align:center">完型填空</td>
+<td style="text-align:center">300k</td>
+<td style="text-align:center">1.4M</td>
+<td style="text-align:center">准确率</td>
+</tr>
+<tr>
+<td style="text-align:center">Children’s Book Test</td>
+<td style="text-align:center">Children’s Book</td>
+<td style="text-align:center">完型填空</td>
+<td style="text-align:center">108</td>
+<td style="text-align:center">688k</td>
+<td style="text-align:center">准确率</td>
+</tr>
+<tr>
+<td style="text-align:center">MCTest</td>
+<td style="text-align:center">Fictional Stories</td>
+<td style="text-align:center">多项选择</td>
+<td style="text-align:center">500</td>
+<td style="text-align:center">2k</td>
+<td style="text-align:center">准确率</td>
+</tr>
+<tr>
+<td style="text-align:center">RACE</td>
+<td style="text-align:center">English Exams</td>
+<td style="text-align:center">多项选择</td>
+<td style="text-align:center">28k</td>
+<td style="text-align:center">97k</td>
+<td style="text-align:center">准确率</td>
+</tr>
+<tr>
+<td style="text-align:center">SQuAD</td>
+<td style="text-align:center">Wikipedia</td>
+<td style="text-align:center">区域预测</td>
+<td style="text-align:center">536</td>
+<td style="text-align:center">100k</td>
+<td style="text-align:center">F1</td>
+</tr>
+<tr>
+<td style="text-align:center">SQuAD2.0</td>
+<td style="text-align:center">Wikipedia</td>
+<td style="text-align:center">区域预测</td>
+<td style="text-align:center">505</td>
+<td style="text-align:center">150k</td>
+<td style="text-align:center">F1</td>
+</tr>
+<tr>
+<td style="text-align:center">DuReader</td>
+<td style="text-align:center">user logs(Baidu)</td>
+<td style="text-align:center">自由形式</td>
+<td style="text-align:center">1M</td>
+<td style="text-align:center">200k</td>
+<td style="text-align:center">BLEU,ROUGE-L</td>
+</tr>
+<tr>
+<td style="text-align:center">SQuAD</td>
+<td style="text-align:center">user logs(Bing)</td>
+<td style="text-align:center">自由形式</td>
+<td style="text-align:center">3.2M</td>
+<td style="text-align:center">1M</td>
+<td style="text-align:center">准确率，BLEU,ROUGE-L</td>
+</tr>
+</tbody>
+</table>
+<p>以上是对机器阅读理解数据集的介绍，等有时间再把相关模型写一下。</p>
+<p>END.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/05/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen Xu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Xu Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/05/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-05 14:29:44" itemprop="dateCreated datePublished" datetime="2019-04-05T14:29:44+08:00">2019-04-05</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Chen Xu</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chen Xu</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
