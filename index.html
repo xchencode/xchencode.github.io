@@ -228,6 +228,40 @@
         
         
           
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
 
     
@@ -335,16 +369,46 @@
                 
               
 
-              <time title="创建时间：2019-04-09 11:02:31 / 修改时间：11:12:56" itemprop="dateCreated datePublished" datetime="2019-04-09T11:02:31+08:00">2019-04-09</time>
+              <time title="创建时间：2019-04-09 11:02:31" itemprop="dateCreated datePublished" datetime="2019-04-09T11:02:31+08:00">2019-04-09</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-13 13:29:46" itemprop="dateModified" datetime="2019-04-13T13:29:46+08:00">2019-04-13</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/NLP/" itemprop="url" rel="index"><span itemprop="name">NLP</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -378,8 +442,7 @@
           
             <p>用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。</p>
 <h2 id="机器阅读理解中的数据集"><a href="#机器阅读理解中的数据集" class="headerlink" title="机器阅读理解中的数据集"></a>机器阅读理解中的数据集</h2><p>机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是：</p>
-<p>$$f(P,Q)=A$$</p>
-<p>这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领域的研究进展。根据问题（Q）和回答（A）的形式，机器阅读理解中的数据集可以分为最早的完型填空形式（cloze-style）、多项选择（multi-choice）、区域预测（span-prediction）和自由形式（open-form）。经历过英语高考的各位对此都不陌生，下面对这四种形式分别介绍，并给出每种形式的代表数据集。</p>
+<script type="math/tex; mode=display">f(P,Q)=A</script><p>这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领域的研究进展。根据问题（Q）和回答（A）的形式，机器阅读理解中的数据集可以分为最早的完型填空形式（cloze-style）、多项选择（multi-choice）、区域预测（span-prediction）和自由形式（open-form）。经历过英语高考的各位对此都不陌生，下面对这四种形式分别介绍，并给出每种形式的代表数据集。</p>
 <h3 id="1、完型填空形式"><a href="#1、完型填空形式" class="headerlink" title="1、完型填空形式"></a>1、完型填空形式</h3><p>完型填空类型的阅读理解问题就是在原文中挖出一个空来，由机器根据对文章上下文的理解去补全。这类比较著名的数据集有CNN/Daily Mail、Children’s Book Test(CBT)等，下文介绍了CNN/Daily Mail.</p>
 <ul>
 <li><strong>CNN/Daily Mail</strong> :<br>CNN/Daily Mail s数据集由大名鼎鼎的机器阅读理解文章《Teaching  Machines to Read and Comprehend》给出。值得一提的是，该篇文章还提出了两个经典的神经机器阅读理解模型，以后再做介绍。数据集从CNN和Daily Mail的新闻中提取文章，并抽取新闻报道中重点句子的entity，将其替换为空格。为了去除额外信息，如世界知识的影响，文章中的实体被匿名的ID所代替，并打乱序号顺序，这使得模型必须依赖文本来回答问题。下图是论文给出的一个示例。<br><img src="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="论文中给出的示例"><br>CNN/Daily Mail数据集下载：<a href="https://cs.nyu.edu/~kcho/DMQA/" target="_blank" rel="noopener">https://cs.nyu.edu/~kcho/DMQA/</a><br>论文地址：<a href="https://arxiv.org/abs/1506.03340" target="_blank" rel="noopener">Teaching  Machines to Read and Comprehend</a></li>
@@ -399,6 +462,7 @@
 <ul>
 <li><strong>DuReader</strong>：2017年百度发布了开领域的中文阅读理解数据集DuReader，在百度知道和百度搜索中收集了一百多万个文档和二十多万个不同类型的问题，包括YesNo问题，描述性问题等，并且手工制造答案。<br><img src="https://img-blog.csdnimg.cn/20190407123010357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>DuReader数据集下载：<a href="https://ai.baidu.com//broad/subordinate?dataset=dureader" target="_blank" rel="noopener">https://ai.baidu.com//broad/subordinate?dataset=dureader</a><br>论文下载:<a href="https://arxiv.org/abs/1711.05073" target="_blank" rel="noopener">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>上述是对当下机器阅读理解数据集的简述，至于每个数据集中各模型的排名情况，可以移步<a href="https://paperswithcode.com/" target="_blank" rel="noopener">paperwithcode</a>查看。根据任务定义的不同，各数据集的评价指标也不尽相同。完形填空和多项选择可以直接用准确率衡量，区域预测形式可以用F1衡量。自由形式的阅读理解评价指标有多种，用到BLEU和ROUGE-L的多一些。本文提到的数据集如下：</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -477,6 +541,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>以上是对机器阅读理解数据集的介绍，等有时间再把相关模型写一下。</p>
 <p>END.</p>
 
@@ -716,6 +781,19 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
 
               
             </nav>
@@ -898,6 +976,61 @@
   
 
   
+  
+
+  
+  
+    
+      
+        
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
 
   
 
