@@ -96,12 +96,12 @@
 
 
 
-  <meta name="description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。 机器阅读理解中的数据集机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=A这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领">
+  <meta name="description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。  机器阅读理解中的数据集 机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=Af(P,Q)=A f(P,Q)=A 这里的 f 就是阅读理解的模型。模型的发展离不开">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器阅读理解数据集">
 <meta property="og:url" content="http://yoursite.com/2019/04/09/mrc_data/index.html">
 <meta property="og:site_name" content="Chen Xu Blog">
-<meta property="og:description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。 机器阅读理解中的数据集机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=A这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领">
+<meta property="og:description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。  机器阅读理解中的数据集 机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=Af(P,Q)=A f(P,Q)=A 这里的 f 就是阅读理解的模型。模型的发展离不开">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190407115355693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center">
@@ -111,7 +111,7 @@
 <meta property="og:updated_time" content="2019-04-13T05:29:46.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器阅读理解数据集">
-<meta name="twitter:description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。 机器阅读理解中的数据集机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=A这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领">
+<meta name="twitter:description" content="用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。  机器阅读理解中的数据集 机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是： f(P,Q)=Af(P,Q)=A f(P,Q)=A 这里的 f 就是阅读理解的模型。模型的发展离不开">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center">
 
 
@@ -137,6 +137,16 @@
 
 
 
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a003b50fe9b0c04e3046f6584e20f0ed";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -287,11 +297,40 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -421,9 +460,33 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/04/09/mrc_data/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/09/mrc_data/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+          
+            <span id="/2019/04/09/mrc_data/" class="leancloud_visitors" data-flag-title="机器阅读理解数据集">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -446,28 +509,54 @@
 
       
         <p>用神经网络解决阅读理解问题是当下的NLP任务的重点之一。本文对机器阅读理解任务中的数据集进行了概括介绍。</p>
-<h2 id="机器阅读理解中的数据集"><a href="#机器阅读理解中的数据集" class="headerlink" title="机器阅读理解中的数据集"></a>机器阅读理解中的数据集</h2><p>机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是：</p>
-<script type="math/tex; mode=display">f(P,Q)=A</script><p>这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领域的研究进展。根据问题（Q）和回答（A）的形式，机器阅读理解中的数据集可以分为最早的完型填空形式（cloze-style）、多项选择（multi-choice）、区域预测（span-prediction）和自由形式（open-form）。经历过英语高考的各位对此都不陌生，下面对这四种形式分别介绍，并给出每种形式的代表数据集。</p>
-<h3 id="1、完型填空形式"><a href="#1、完型填空形式" class="headerlink" title="1、完型填空形式"></a>1、完型填空形式</h3><p>完型填空类型的阅读理解问题就是在原文中挖出一个空来，由机器根据对文章上下文的理解去补全。这类比较著名的数据集有CNN/Daily Mail、Children’s Book Test(CBT)等，下文介绍了CNN/Daily Mail.</p>
+<h2 id="机器阅读理解中的数据集"><a class="markdownIt-Anchor" href="#机器阅读理解中的数据集"></a> 机器阅读理解中的数据集</h2>
+<p>机器阅读理解的一般任务定义是，给机器一篇或多篇文章（Passage，P），机器需要对若干问题（Question，Q）进行回答（Answer，A）。用一个式子总结就是：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>P</mi><mo separator="true">,</mo><mi>Q</mi><mo>)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">f(P,Q)=A
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span></span></p>
+<p>这里的 f 就是阅读理解的模型。模型的发展离不开数据集，数据集的不断进步直接地推动了该领域的研究进展。根据问题（Q）和回答（A）的形式，机器阅读理解中的数据集可以分为最早的完型填空形式（cloze-style）、多项选择（multi-choice）、区域预测（span-prediction）和自由形式（open-form）。经历过英语高考的各位对此都不陌生，下面对这四种形式分别介绍，并给出每种形式的代表数据集。</p>
+<h3 id="1-完型填空形式"><a class="markdownIt-Anchor" href="#1-完型填空形式"></a> 1、完型填空形式</h3>
+<p>完型填空类型的阅读理解问题就是在原文中挖出一个空来，由机器根据对文章上下文的理解去补全。这类比较著名的数据集有CNN/Daily Mail、Children’s Book Test(CBT)等，下文介绍了CNN/Daily Mail.</p>
 <ul>
-<li><strong>CNN/Daily Mail</strong> :<br>CNN/Daily Mail s数据集由大名鼎鼎的机器阅读理解文章《Teaching  Machines to Read and Comprehend》给出。值得一提的是，该篇文章还提出了两个经典的神经机器阅读理解模型，以后再做介绍。数据集从CNN和Daily Mail的新闻中提取文章，并抽取新闻报道中重点句子的entity，将其替换为空格。为了去除额外信息，如世界知识的影响，文章中的实体被匿名的ID所代替，并打乱序号顺序，这使得模型必须依赖文本来回答问题。下图是论文给出的一个示例。<br><img src="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="论文中给出的示例"><br>CNN/Daily Mail数据集下载：<a href="https://cs.nyu.edu/~kcho/DMQA/" target="_blank" rel="noopener">https://cs.nyu.edu/~kcho/DMQA/</a><br>论文地址：<a href="https://arxiv.org/abs/1506.03340" target="_blank" rel="noopener">Teaching  Machines to Read and Comprehend</a></li>
+<li><strong>CNN/Daily Mail</strong> :<br>
+CNN/Daily Mail s数据集由大名鼎鼎的机器阅读理解文章《Teaching  Machines to Read and Comprehend》给出。值得一提的是，该篇文章还提出了两个经典的神经机器阅读理解模型，以后再做介绍。数据集从CNN和Daily Mail的新闻中提取文章，并抽取新闻报道中重点句子的entity，将其替换为空格。为了去除额外信息，如世界知识的影响，文章中的实体被匿名的ID所代替，并打乱序号顺序，这使得模型必须依赖文本来回答问题。下图是论文给出的一个示例。<br>
+<img src="https://img-blog.csdnimg.cn/20190407113547105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="论文中给出的示例"><br>
+CNN/Daily Mail数据集下载：<a href="https://cs.nyu.edu/~kcho/DMQA/" target="_blank" rel="noopener">https://cs.nyu.edu/~kcho/DMQA/</a><br>
+论文地址：<a href="https://arxiv.org/abs/1506.03340" target="_blank" rel="noopener">Teaching  Machines to Read and Comprehend</a></li>
 </ul>
-<h3 id="2、-多项选择形式"><a href="#2、-多项选择形式" class="headerlink" title="2、 多项选择形式"></a>2、 多项选择形式</h3><p>此类形式和初高中时英语阅读理解题的类型相似，甚至有数据集以中国中学生英语考试的数据为基础构建数据集（RACE）。每篇文章对应多个问题，每个问题有多个候选答案，机器需要在这些候选答案中找到最合适的那个。通常这些候选答案与原文中的句子并不相同，即使相同也可能和问题毫不相关，所以仅靠判断相似性无法取得较好的效果。此类数据集中比较著名的有MCTest、RACE等，下面介绍RACE数据集。</p>
+<h3 id="2-多项选择形式"><a class="markdownIt-Anchor" href="#2-多项选择形式"></a> 2、 多项选择形式</h3>
+<p>此类形式和初高中时英语阅读理解题的类型相似，甚至有数据集以中国中学生英语考试的数据为基础构建数据集（RACE）。每篇文章对应多个问题，每个问题有多个候选答案，机器需要在这些候选答案中找到最合适的那个。通常这些候选答案与原文中的句子并不相同，即使相同也可能和问题毫不相关，所以仅靠判断相似性无法取得较好的效果。此类数据集中比较著名的有MCTest、RACE等，下面介绍RACE数据集。</p>
 <ul>
-<li><strong>RACE</strong>：2017年提出，从中国初中生和高中生的英语考试中搜集了2万多篇文章和10万个问题，覆盖领域广泛，这些问题由专家或老师提出，原本是考察人类的阅读理解水平，所以回答问题需要机器有一定的推理能力。<br><img src="https://img-blog.csdnimg.cn/20190407115355693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>RACE数据集下载：<a href="http://www.cs.cmu.edu/~glai1/data/race/" target="_blank" rel="noopener">http://www.cs.cmu.edu/~glai1/data/race/</a><br>论文地址：<a href="https://arxiv.org/abs/1704.04683" target="_blank" rel="noopener">RACE: Large-scale ReAding Comprehension Dataset From Examinations</a></li>
+<li><strong>RACE</strong>：2017年提出，从中国初中生和高中生的英语考试中搜集了2万多篇文章和10万个问题，覆盖领域广泛，这些问题由专家或老师提出，原本是考察人类的阅读理解水平，所以回答问题需要机器有一定的推理能力。<br>
+<img src="https://img-blog.csdnimg.cn/20190407115355693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+RACE数据集下载：<a href="http://www.cs.cmu.edu/~glai1/data/race/" target="_blank" rel="noopener">http://www.cs.cmu.edu/~glai1/data/race/</a><br>
+论文地址：<a href="https://arxiv.org/abs/1704.04683" target="_blank" rel="noopener">RACE: Large-scale ReAding Comprehension Dataset From Examinations</a></li>
 </ul>
-<h3 id="3、-区域预测形式"><a href="#3、-区域预测形式" class="headerlink" title="3、 区域预测形式"></a>3、 区域预测形式</h3><p>区域预测形式阅读理解问题也称为抽取式问答（Extractive QA），即给定文章和问题，机器需要在文章中找到答案对应的区域（span），给出开始位置和结束位置，区域的长度通常不会限制。这类数据集中最常用的是斯坦福大学的SQuAD数据集。</p>
+<h3 id="3-区域预测形式"><a class="markdownIt-Anchor" href="#3-区域预测形式"></a> 3、 区域预测形式</h3>
+<p>区域预测形式阅读理解问题也称为抽取式问答（Extractive QA），即给定文章和问题，机器需要在文章中找到答案对应的区域（span），给出开始位置和结束位置，区域的长度通常不会限制。这类数据集中最常用的是斯坦福大学的SQuAD数据集。</p>
 <ul>
-<li><p><strong>SQuAD</strong>:2016年，斯坦福大学提出了阅读理解数据集SQuAD，包含了在536篇维基百科手工（crowdworkers）找出的10万多个问题。每个问题对应一篇文章，问题的答案是对应文章中的一部分。<br><img src="https://img-blog.csdnimg.cn/2019040712173083.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>SQuAD数据集下载：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>论文地址：<a href="https://arxiv.org/abs/1606.05250" target="_blank" rel="noopener">SQuAD: 100,000+ Questions for Machine Comprehension of Text</a></p>
+<li>
+<p><strong>SQuAD</strong>:2016年，斯坦福大学提出了阅读理解数据集SQuAD，包含了在536篇维基百科手工（crowdworkers）找出的10万多个问题。每个问题对应一篇文章，问题的答案是对应文章中的一部分。<br>
+<img src="https://img-blog.csdnimg.cn/2019040712173083.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+SQuAD数据集下载：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>
+论文地址：<a href="https://arxiv.org/abs/1606.05250" target="_blank" rel="noopener">SQuAD: 100,000+ Questions for Machine Comprehension of Text</a></p>
 </li>
-<li><p><strong>SQuAD2.0</strong>：SQuAD2.0是SQuAD1.0版本的扩展版，同样是由斯坦福大学发布。与前一个版本不同的是，在之前同样的文章中增加了5万多个新的，无法回答的问题。这些问题在相应文章中有似是而非（plausible）的答案，即和提的问题是同种类型的，但并不正确。模型需要识别这些问题从而避免回答。<br><img src="https://img-blog.csdnimg.cn/2019040712313454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>SQuAD2.0 数据集地址：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>论文地址：<a href="https://arxiv.org/abs/1806.03822" target="_blank" rel="noopener">Know What You Don’t Know: Unanswerable Questions for SQuAD</a></p>
+<li>
+<p><strong>SQuAD2.0</strong>：SQuAD2.0是SQuAD1.0版本的扩展版，同样是由斯坦福大学发布。与前一个版本不同的是，在之前同样的文章中增加了5万多个新的，无法回答的问题。这些问题在相应文章中有似是而非（plausible）的答案，即和提的问题是同种类型的，但并不正确。模型需要识别这些问题从而避免回答。<br>
+<img src="https://img-blog.csdnimg.cn/2019040712313454.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+SQuAD2.0 数据集地址：<a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank" rel="noopener">https://rajpurkar.github.io/SQuAD-explorer/</a><br>
+论文地址：<a href="https://arxiv.org/abs/1806.03822" target="_blank" rel="noopener">Know What You Don’t Know: Unanswerable Questions for SQuAD</a></p>
 </li>
 </ul>
-<h3 id="4、-自由形式"><a href="#4、-自由形式" class="headerlink" title="4、 自由形式"></a>4、 自由形式</h3><p>自由形式的问答是所有问答形式中最难的一个，它不限定问题所处的段落，即一个问题可能是需要理解多个段落甚至多篇文章，问题的答案是人为创造的，也就是既不会给定候选答案，也不是只需要提取文章中的片段。这对机器的阅读理解能力有更高的要求。此类型的数据集比较有名的是百度的DuReader和微软的MS MARCO，两者分别从百度搜索和必应搜索中收集数据。在直觉上看，在搜索引擎中获取数据集是个很巧妙的方法，这省掉了很多人为标注的时间。下面来看DuReader。</p>
+<h3 id="4-自由形式"><a class="markdownIt-Anchor" href="#4-自由形式"></a> 4、 自由形式</h3>
+<p>自由形式的问答是所有问答形式中最难的一个，它不限定问题所处的段落，即一个问题可能是需要理解多个段落甚至多篇文章，问题的答案是人为创造的，也就是既不会给定候选答案，也不是只需要提取文章中的片段。这对机器的阅读理解能力有更高的要求。此类型的数据集比较有名的是百度的DuReader和微软的MS MARCO，两者分别从百度搜索和必应搜索中收集数据。在直觉上看，在搜索引擎中获取数据集是个很巧妙的方法，这省掉了很多人为标注的时间。下面来看DuReader。</p>
 <ul>
-<li><strong>DuReader</strong>：2017年百度发布了开领域的中文阅读理解数据集DuReader，在百度知道和百度搜索中收集了一百多万个文档和二十多万个不同类型的问题，包括YesNo问题，描述性问题等，并且手工制造答案。<br><img src="https://img-blog.csdnimg.cn/20190407123010357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>DuReader数据集下载：<a href="https://ai.baidu.com//broad/subordinate?dataset=dureader" target="_blank" rel="noopener">https://ai.baidu.com//broad/subordinate?dataset=dureader</a><br>论文下载:<a href="https://arxiv.org/abs/1711.05073" target="_blank" rel="noopener">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>上述是对当下机器阅读理解数据集的简述，至于每个数据集中各模型的排名情况，可以移步<a href="https://paperswithcode.com/" target="_blank" rel="noopener">paperwithcode</a>查看。根据任务定义的不同，各数据集的评价指标也不尽相同。完形填空和多项选择可以直接用准确率衡量，区域预测形式可以用F1衡量。自由形式的阅读理解评价指标有多种，用到BLEU和ROUGE-L的多一些。本文提到的数据集如下：</li>
+<li><strong>DuReader</strong>：2017年百度发布了开领域的中文阅读理解数据集DuReader，在百度知道和百度搜索中收集了一百多万个文档和二十多万个不同类型的问题，包括YesNo问题，描述性问题等，并且手工制造答案。<br>
+<img src="https://img-blog.csdnimg.cn/20190407123010357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDYxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+DuReader数据集下载：<a href="https://ai.baidu.com//broad/subordinate?dataset=dureader" target="_blank" rel="noopener">https://ai.baidu.com//broad/subordinate?dataset=dureader</a><br>
+论文下载:<a href="https://arxiv.org/abs/1711.05073" target="_blank" rel="noopener">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a></li>
 </ul>
-<div class="table-container">
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>上述是对当下机器阅读理解数据集的简述，至于每个数据集中各模型的排名情况，可以移步<a href="https://paperswithcode.com/" target="_blank" rel="noopener">paperwithcode</a>查看。根据任务定义的不同，各数据集的评价指标也不尽相同。完形填空和多项选择可以直接用准确率衡量，区域预测形式可以用F1衡量。自由形式的阅读理解评价指标有多种，用到BLEU和ROUGE-L的多一些。本文提到的数据集如下：</p>
 <table>
 <thead>
 <tr>
@@ -546,7 +635,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>以上是对机器阅读理解数据集的介绍，等有时间再把相关模型写一下。</p>
 <p>END.</p>
 
@@ -565,6 +653,30 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="Chen Xu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -572,6 +684,61 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+            
+              <div>
+                
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+              </div>
+            
+          </div>
+        
+        </div>
       
       
 
@@ -608,6 +775,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
 
   
 
@@ -668,12 +842,16 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
                     <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -711,7 +889,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#机器阅读理解中的数据集"><span class="nav-number">1.</span> <span class="nav-text">机器阅读理解中的数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、完型填空形式"><span class="nav-number">1.1.</span> <span class="nav-text">1、完型填空形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、-多项选择形式"><span class="nav-number">1.2.</span> <span class="nav-text">2、 多项选择形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、-区域预测形式"><span class="nav-number">1.3.</span> <span class="nav-text">3、 区域预测形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、-自由形式"><span class="nav-number">1.4.</span> <span class="nav-text">4、 自由形式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#机器阅读理解中的数据集"><span class="nav-number">1.</span> <span class="nav-text"> 机器阅读理解中的数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-完型填空形式"><span class="nav-number">1.1.</span> <span class="nav-text"> 1、完型填空形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-多项选择形式"><span class="nav-number">1.2.</span> <span class="nav-text"> 2、 多项选择形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-区域预测形式"><span class="nav-number">1.3.</span> <span class="nav-text"> 3、 区域预测形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-自由形式"><span class="nav-number">1.4.</span> <span class="nav-text"> 4、 自由形式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text"> 总结</span></a></li></ol></div>
             
 
           </div>
@@ -744,15 +922,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -866,17 +1038,428 @@
   
 
   
+  
+  <script id="dsq-count-scr" src="https://xchencode.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/04/09/mrc_data/";
+    this.page.identifier = "2019/04/09/mrc_data/";
+    this.page.title = '机器阅读理解数据集';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://xchencode.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
 
 
   
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
 
   
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $('.leancloud_visitors');
+
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if (countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + '5OxULwekGQcCzq6LParpySgr-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': '5OxULwekGQcCzq6LParpySgr-gzGzoHsz',
+                'X-LC-Key': 'BuFzpoIIw5OqUAHn7fyRmWhy',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
+    });
+  </script>
+
+
 
   
 
